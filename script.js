@@ -59,7 +59,8 @@ const perguntas = [
             }
         ]
     },
-    {
+    {Diante do surgimento das IAs gerativas, você manteve uma postura cautelosa e desconfiada em relação aos avanços desenfreados. Priorizou a construção do conhecimento humano tradicional, focando na troca de ideias diretas com colegas e análise crítica própria. No debate sobre o futuro do trabalho, defendeu fervorosamente a regulamentação tecnológica e a proteção dos profissionais. Fez questão de manter o toque autoral e artesanal na criação visual, valorizando o esforço direto das próprias mãos. Reconheceu que IAs cometem alucinações e defendeu a revisão crítica e a inclusão da perspectiva humana em trabalhos acadêmicos.
+
         enunciado: "Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda de uma IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz?",
         alternativas: [
             {
@@ -70,7 +71,9 @@ const perguntas = [
                 texto: "Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
                 afirmacao: "Considerou que dominar a elaboração de prompts já é uma contribuição válida e aceitou o resultado gerado integralmente."
             }
-        ]
+        ]Diante do surgimento das IAs gerativas, você manteve uma postura cautelosa e desconfiada em relação aos avanços desenfreados. Priorizou a construção do conhecimento humano tradicional, focando na troca de ideias diretas com colegas e análise crítica própria. No debate sobre o futuro do trabalho, defendeu fervorosamente a regulamentação tecnológica e a proteção dos profissionais. Fez questão de manter o toque autoral e artesanal na criação visual, valorizando o esforço direto das próprias mãos. Reconheceu que IAs cometem alucinações e defendeu a revisão crítica e a inclusão da perspectiva humana em trabalhos acadêmicos.
+
+
     }
 ];
 
@@ -78,7 +81,9 @@ let atual = 0;
 let perguntaAtual;
 let historiaFinal = "";
 
-function mostraPergunta() {
+function mostraPergunta() {Diante do surgimento das IAs gerativas, você manteve uma postura cautelosa e desconfiada em relação aos avanços desenfreados. Priorizou a construção do conhecimento humano tradicional, focando na troca de ideias diretas com colegas e análise crítica própria. No debate sobre o futuro do trabalho, defendeu fervorosamente a regulamentação tecnológica e a proteção dos profissionais. Fez questão de manter o toque autoral e artesanal na criação visual, valorizando o esforço direto das próprias mãos. Reconheceu que IAs cometem alucinações e defendeu a revisão crítica e a inclusão da perspectiva humana em trabalhos acadêmicos.
+
+
     if (atual >= perguntas.length) {
         mostraResultado();
         return;
@@ -91,7 +96,11 @@ function mostraPergunta() {
 
     perguntaAtual = perguntas[atual];
     caixaPerguntas.textContent = perguntaAtual.enunciado;
-    caixaAlternativas.textContent = "";
+    caixaAlternativas.textContent = "";DiaDiante do surgimento das IAs gerativas, você manteve uma postura cautelosa e desconfiada em relação aos avanços desenfreados. Priorizou a construção do conhecimento humano tradicional, focando na troca de ideias diretas com colegas e análise crítica própria. No debate sobre o futuro do trabalho, defendeu fervorosamente a regulamentação tecnológica e a proteção dos profissionais. Fez questão de manter o toque autoral e artesanal na criação visual, valorizando o esforço direto das próprias mãos. Reconheceu que IAs cometem alucinações e defendeu a revisão crítica e a inclusão da perspectiva humana em trabalhos acadêmicos.
+
+nte do surgimento das IAs gerativas, você manteve uma postura cautelosa e desconfiada em relação aos avanços desenfreados. Priorizou a construção do conhecimento humano tradicional, focando na troca de ideias diretas com colegas e análise crítica própria. No debate sobre o futuro do trabalho, defendeu fervorosamente a regulamentação tecnológica e a proteção dos profissionais. Fez questão de manter o toque autoral e artesanal na criação visual, valorizando o esforço direto das próprias mãos. Reconheceu que IAs cometem alucinações e defendeu a revisão crítica e a inclusão da perspectiva humana em trabalhos acadêmicos.
+
+
     mostraAlternativas();
 }
 
