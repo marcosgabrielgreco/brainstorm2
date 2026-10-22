@@ -1,17 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap');
 
 :root {
-    --cor-fundo: #FFF9E6;
-    --cor-principal: #FFD23F;
-    --cor-secundaria: #FF6B6B;
-    --cor-destaque: #4ECDC4;
-    --cor-texto: #1A1A1A;
+    --cor-fundo: #F4F4F0;       /* Off-white tom papel */
+    --cor-principal: #FFFFFF;   /* Branco puro */
+    --cor-secundaria: #181818;  /* Preto carvão */
+    --cor-destaque: #181818;    /* Monocromático */
+    --cor-texto: #181818;
 }
 
 body {
     background-color: var(--cor-fundo);
     color: var(--cor-texto);
-    font-family: 'Space Mono', monospace;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,52 +20,52 @@ body {
 }
 
 .caixa-principal {
-    background-color: #FFFFFF;
+    background-color: var(--cor-principal);
     width: 90%;
-    max-width: 600px;
-    padding: 30px;
-    border: 4px solid var(--cor-texto);
-    box-shadow: 8px 8px 0px var(--cor-texto);
+    max-width: 580px;
+    text-align: left;
+    padding: 40px;
+    border: 2px solid var(--cor-texto);
+    box-shadow: 10px 10px 0px var(--cor-texto);
     border-radius: 0;
 }
 
 h1, .caixa-perguntas, .caixa-resultado {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Playfair Display', serif;
 }
 
 h1 {
     color: var(--cor-texto);
-    background: var(--cor-principal);
-    display: inline-block;
-    padding: 10px 20px;
-    border: 3px solid var(--cor-texto);
-    transform: rotate(-2deg);
+    font-size: 2.2rem;
+    margin-top: 0;
+    border-bottom: 2px solid var(--cor-texto);
+    padding-bottom: 15px;
 }
 
 button {
-    background-color: var(--cor-destaque);
+    background-color: transparent;
     color: var(--cor-texto);
-    font-weight: bold;
-    border: 3px solid var(--cor-texto);
+    border: 1px solid var(--cor-texto);
     border-radius: 0;
-    padding: 15px;
+    padding: 16px 20px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-align: left;
     cursor: pointer;
-    box-shadow: 4px 4px 0px var(--cor-texto);
-    transition: transform 0.1s, box-shadow 0.1s;
+    transition: all 0.2s ease;
 }
 
 button:hover {
     background-color: var(--cor-secundaria);
     color: #FFFFFF;
-    transform: translate(-2px, -2px);
-    box-shadow: 6px 6px 0px var(--cor-texto);
 }
 
 .caixa-resultado {
     display: none;
-    margin-top: 20px;
-    border: 3px dashed var(--cor-texto);
-    padding: 15px;
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px dashed var(--cor-texto);
 }
 
 .caixa-resultado.mostrar {
@@ -76,5 +76,5 @@ button:hover {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    margin-top: 20px;
+    margin-top: 25px;
 }
